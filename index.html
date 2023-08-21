@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            overflow-y: scroll; /* Enable vertical scrolling */
         }
         
         .container {
@@ -43,6 +44,18 @@
         .support-button {
             left: 20px;
         }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0; /* Gray background for footer */
+            text-align: center;
+            padding: 5px 0;
+            font-size: 14px;
+            color: #555; /* Gray text color */
+        }
     </style>
 </head>
 <body>
@@ -57,6 +70,10 @@
         <div class="support-button">
             <a href="https://discord.gg/DuZShDBq" target="_blank">Support</a>
         </div>
+    </div>
+
+    <div class="footer">
+        @ Synth. All Rights Reserved
     </div>
 </body>
 </html>
