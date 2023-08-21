@@ -21,7 +21,6 @@
         .login-button {
             position: absolute;
             top: 20px;
-            right: 20px;
         }
 
         .invite-button a,
@@ -33,6 +32,10 @@
             font-size: 18px; /* Larger font size */
             text-decoration: none;
             border-radius: 5px;
+        }
+
+        .login-button {
+            left: 20px; /* Positioning on the left side */
         }
 
         .discord-profile {
@@ -63,8 +66,7 @@
     </div>
 
     <script>
-        // You can use JavaScript to load and display the user's profile picture after authorization
-        // This example uses the "avatar_url" property as a placeholder
+        // This script will load the user's profile picture after authorization
         const discordProfile = document.querySelector('.discord-profile');
 
         // Simulate a successful authorization response (for demonstration purposes)
@@ -74,7 +76,10 @@
 
         // Update the profile picture
         if (authorizationResponse.avatar_url) {
-            discordProfile.innerHTML = `<img src="${authorizationResponse.avatar_url}" alt="Discord Profile Picture">`;
+            const img = document.createElement('img');
+            img.src = authorizationResponse.avatar_url;
+            img.alt = 'Discord Profile Picture';
+            discordProfile.appendChild(img);
         }
     </script>
 </body>
