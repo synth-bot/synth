@@ -17,13 +17,15 @@
             text-align: center;
         }
         
-        .invite-button {
+        .invite-button,
+        .login-button {
             position: absolute;
             top: 20px;
             right: 20px;
         }
 
-        .invite-button a {
+        .invite-button a,
+        .login-button a {
             display: inline-block;
             padding: 10px 20px;
             background-color: #4caf50; /* Green button color */
@@ -31,6 +33,10 @@
             font-size: 18px; /* Larger font size */
             text-decoration: none;
             border-radius: 5px;
+        }
+
+        .discord-profile {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -44,6 +50,32 @@
                 Invite Bot
             </a>
         </div>
+
+        <div class="login-button">
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1133103821279744070&redirect_uri=https%3A%2F%2Fsynth-bot.github.io%2Fsynth%2F&response_type=code&scope=identify%20email" target="_blank">
+                Login
+            </a>
+        </div>
+
+        <div class="discord-profile">
+            <!-- The user's Discord profile picture will be displayed here after authorization -->
+        </div>
     </div>
+
+    <script>
+        // You can use JavaScript to load and display the user's profile picture after authorization
+        // This example uses the "avatar_url" property as a placeholder
+        const discordProfile = document.querySelector('.discord-profile');
+
+        // Simulate a successful authorization response (for demonstration purposes)
+        const authorizationResponse = {
+            avatar_url: 'URL_TO_USER_AVATAR'
+        };
+
+        // Update the profile picture
+        if (authorizationResponse.avatar_url) {
+            discordProfile.innerHTML = `<img src="${authorizationResponse.avatar_url}" alt="Discord Profile Picture">`;
+        }
+    </script>
 </body>
 </html>
