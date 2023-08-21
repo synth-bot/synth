@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bot Invite</title>
+</head>
+<body>
+    <h1>Welcome to the Bot Invite Page</h1>
+    <p>Click the button below to invite the bot to your server:</p>
+    
+    <a href="YOUR_BOT_INVITE_LINK_HERE" target="_blank">
+        <button>Invite Bot</button>
+    </a>
+</body>
+</html>
