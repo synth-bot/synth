@@ -2,13 +2,36 @@
 <html>
 <head>
     <title>Bot Invite</title>
+    <style>
+        body {
+            background-color: #33cc33; /* Green background color */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .invite-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Bot Invite Page</h1>
-    <p>Click the button below to invite the bot to your server:</p>
-    
-    <a href="https://discord.com/api/oauth2/authorize?client_id=1133103821279744070&permissions=8&scope=bot" target="_blank">
-        <button>Invite Bot</button>
-    </a>
+    <div class="container">
+        <h1>Welcome to the Bot Invite Page</h1>
+        <p>Click the button below to invite the bot to your server:</p>
+        
+        <a class="invite-button" href="https://discord.com/api/oauth2/authorize?client_id=1133103821279744070&permissions=8&scope=bot" target="_blank">
+            <button>Invite Bot</button>
+        </a>
+    </div>
 </body>
 </html>
