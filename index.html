@@ -1,62 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="apollo">
 <head>
-    <title>Bot Invite</title>
-    <style>
-        body {
-            background-image: url("https://cdn.discordapp.com/attachments/1142927709610180734/1143302620220502016/IMG_1544.png"); /* Replace with the actual URL */
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .invite-button,
-        .support-button {
-            position: absolute;
-            top: 20px;
-        }
-
-        .invite-button a,
-        .support-button a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4caf50; /* Green button color */
-            color: white; /* White text color */
-            font-size: 18px; /* Larger font size */
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .invite-button {
-            right: 100px;
-        }
-
-        .support-button {
-            left: 20px;
-        }
-    </style>
+<meta charset="utf-8" />
+<link rel="icon" href="./favicon.ico" />
+<meta name="viewport" content="width=device-width" />
+<link href="./_app/immutable/assets/0.b0f4ab9e.css" rel="stylesheet">
+<link href="./_app/immutable/assets/2.56d1a1db.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome to the Bot Invite Page</h1>
-        <p>Click the button on the top right to invite the bot to your server:</p>
-        
-        <div class="invite-button">
-            <a href="https://discord.com/api/oauth2/authorize?client_id=1133103821279744070&permissions=8&scope=bot" target="_blank">Invite Bot</a>
-        </div>
+<body data-sveltekit-preload-data="hover">
+<div style="display: contents">
+<navbar class="navbar absolute z-50"><a class="btn btn-ghost inline-flex text-xl normal-case text-white" href="/"><img src="/assets/icon.webp" width="32" height="32" alt="icon">
+<span>Apollo</span></a>
+<div class="navbar-start"><a class="hidden sm:inline-flex btn btn-ghost text-white text-sm normal-case" href="https://docs.apollo-bot.xyz">Documentation</a>
+<a class="hidden sm:inline-flex btn btn-ghost text-white text-sm normal-case" href="https://discord.com/invite/CQsfW5pb2e">Support</a>
+<a class="hidden sm:inline-flex btn btn-ghost text-white text-sm normal-case" href="/premium">Premium</a></div>
+<div class="navbar-end hidden sm:inline-flex flex-col-reverse items-end px-4"><button class="btn btn-primary">Sign In</button></div>
+<div class="navbar-end sm:hidden flex flex-col-reverse items-end px-4">
+<div class="relative">
+<button title="Nav Menu" id="headlessui-popover-button-770737" type="button" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" class="transition-all duration-300" viewBox="0 0 30 30" width="30px" height="30px"><path fill="#ffffff" d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path></svg></button>
+</div></div></navbar>
+<div class="hero min-h-screen z-0 place-items-center svelte-1z0ge2f" id="hero"><div class="hero-overlay bg-opacity-0" style="box-shadow: inset 0 0 0 2000px rgba(0, 22, 76, 0.7)"></div>
+<div class="hero-content min-h-screen flex-col items-center md:mx-8"><h1 class="text-6xl sm:text-7xl md:text-8xl font-extrabold text-center text-white sm:tracking-[-5px] pt-2">Take your server to the<br><span class="text-transparent bg-gradient-to-r from-[#007cf0] to-[#00dfd8] bg-clip-text">next level.</span></h1>
+<h2 class="text-xl sm:text-2xl text-center md:px-32">Apollo is a powerful bot with features like advanced giveaways, message counting, and customizable greetings, and much more!</h2>
+<div class="flex flex-col sm:flex-row gap-4"><a href="/invite" class="btn btn-md btn-primary normal-case"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"><path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 15 10 L 15 15 L 10 15 L 10 17 L 15 17 L 15 22 L 17 22 L 17 17 L 22 17 L 22 15 L 17 15 L 17 10 Z"></path></svg>
+Add to server
+</a>
+<a href="/premium" class="group btn btn-md btn-accent btn-outline normal-case"><svg class="fill-accent group-hover:fill-black duration-200" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24"><path d="M23.692 13.038l-5.457-2.273-2.273-5.457c-.156-.373-.768-.373-.924 0l-2.273 5.457-5.457 2.273C7.121 13.116 7 13.298 7 13.5s.121.384.308.462l5.457 2.273 2.273 5.457C15.116 21.879 15.298 22 15.5 22s.384-.121.462-.308l2.273-5.457 5.457-2.273C23.879 13.884 24 13.702 24 13.5S23.879 13.116 23.692 13.038zM10.658 6.025L7.146 4.854 5.975 1.342c-.137-.408-.813-.408-.949 0L3.854 4.854.342 6.025C.138 6.094 0 6.285 0 6.5s.138.406.342.475l3.513 1.171 1.171 3.513C5.094 11.862 5.285 12 5.5 12s.406-.138.475-.342l1.171-3.513 3.513-1.171C10.862 6.906 11 6.715 11 6.5S10.862 6.094 10.658 6.025zM8.658 19.025l-2.013-.671-.671-2.013c-.137-.408-.813-.408-.949 0l-.671 2.013-2.013.671C2.138 19.094 2 19.285 2 19.5s.138.406.342.475l2.013.671.671 2.013C5.094 22.862 5.285 23 5.5 23s.406-.138.475-.342l.671-2.013 2.013-.671C8.862 19.906 9 19.715 9 19.5S8.862 19.094 8.658 19.025z"></path></svg>
+Upgrade to Premium
+</a></div></div></div>
+<div class="flex items-center gap-8 py-8 w-full justify-around flex-col sm:flex-row"><div class="flex flex-col"><div class="stat-title">Servers</div>
+<div class="stat-value text-primary">194.37K</div></div>
+<div class="flex flex-col"><div class="stat-title">Users</div>
+<div class="stat-value text-primary">87.02M</div></div>
+<div class="flex flex-col"><div class="stat-title">Live Giveaways</div>
+<div class="stat-value text-primary">8.31K</div></div></div>
+<div class="min-h-screen"><div class="z-10 lg:px-20"><h2 class="text-bold text-center text-5xl pt-8">Features</h2>
+<div id="__saos-0.47895092738585765__" style><div style="animation: from-left 0.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both; "><div class="flex flex-col md:flex-row justify-around items-center lg:px-4 py-8 mx-8 gap-2"><div class="flex flex-col gap-2 items-center md:items-start"><h3 class="text-4xl font-semibold text-center md:text-start">Greeting System</h3>
+<p class="text-lg text-center md:text-start">Welcome new users to your server easily with a single command.</p>
+<a class="btn btn-primary w-1/2 normal-case" href="https://docs.apollo-bot.xyz/guides/greet">View Docs</a></div>
+<img class="order-first md:order-none" src="/_app/immutable/assets/greet.18a8b0a4.webp" alt="Greeting System"></div>
+</div></div><div id="__saos-0.35027804172632826__" style><div style="animation: from-left 0.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both; "><div class="flex flex-col md:flex-row justify-around items-center lg:px-4 py-8 mx-8 gap-2"><img class="order-first md:order-none" src="/_app/immutable/assets/giveaway.82459e7d.webp" alt="Advanced Giveaways">
+<div class="flex flex-col gap-2 items-center md:items-start"><h3 class="text-4xl font-semibold text-center md:text-start">Advanced Giveaways</h3>
+<p class="text-lg text-center md:text-start">Create advanced giveaways with requirements, bypass roles, winner roles, blacklists, and much more</p>
+<a class="btn btn-primary w-1/2 normal-case" href="https://docs.apollo-bot.xyz/guides/giveaways">View Docs</a>
+</div></div>
+</div></div><div id="__saos-0.011714354988631603__" style><div style="animation: from-left 0.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both; "><div class="flex flex-col md:flex-row justify-around items-center lg:px-4 py-8 mx-8 gap-2"><div class="flex flex-col gap-2 items-center md:items-start"><h3 class="text-4xl font-semibold text-center md:text-start">Message Counting</h3>
+<p class="text-lg text-center md:text-start">Highly configurable message counter, including channel blacklist & whitelist</p>
+<a class="btn btn-primary w-1/2 normal-case" href="https://docs.apollo-bot.xyz/guides/message-counter">View Docs</a></div>
+<img class="order-first md:order-none" src="/_app/immutable/assets/messages.cf3e4564.webp" alt="Message Counting"></div>
+</div></div><div id="__saos-0.193454434546676__" style><div style="animation: from-left 0.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both; "><div class="flex flex-col md:flex-row justify-around items-center lg:px-4 py-8 mx-8 gap-2"><img class="order-first md:order-none" src="/_app/immutable/assets/translate.9b775fe8.webp" alt="Translate">
+<div class="flex flex-col gap-2 items-center md:items-start"><h3 class="text-4xl font-semibold text-center md:text-start">Translate</h3>
+<p class="text-lg text-center md:text-start">Translate to and from 100+ languages</p>
+<a class="btn btn-primary w-1/2 normal-case" href="https://docs.apollo-bot.xyz/commands/utilities#a-translate">View Docs</a>
+</div></div>
+</div></div></div></div>
+<head><meta name="description" content="Apollo is a powerful Discord bot with plenty of features like advanced giveaways, greetings, global AFK, snipe.">
+<meta property="og:title" content="Apollo Bot">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/avatar.webp">
+<meta property="og:description" content="Apollo is a powerful Discord bot with plenty of features like advanced giveaways, greetings, global AFK, snipe.">
+<meta name="theme-color" content="#5865f2">
+<meta name="robots" content="all">
+<title>Apollo Bot</title></head>
+<footer class="p-4 rounded-lg shadow md:px-6 md:py-8"><div class="sm:flex sm:items-center sm:justify-between"><a href="/" class="flex items-center mb-4 sm:mb-0"><img src="/assets/icon.webp" height="32" width="32" class="mr-3" alt="icon">
+<span class="self-center text-2xl font-semibold">Apollo</span></a>
+<ul class="flex gap-5 flex-wrap items-center mb-6 text-sm text-white sm:mb-0"><li><a href="/docs" class="mr-4 hover:underline transition-all md:mr-6 ">Documentation</a></li>
+<li><a href="/support" class="mr-4 hover:underline transition-all md:mr-6 ">Support Server</a></li>
+<li><a href="/privacy" class="mr-4 hover:underline transition-all hovermd:mr-6">Privacy Policy</a></li>
+<li><a href="/terms" class="mr-4 hover:underline transition-all md:mr-6 ">Terms of
+Service</a></li></ul></div>
+<hr class="my-6 border-gray-200 mx-auto dark:border-gray-700">
+<span class="block text-sm text-center">© 2022 Apollo. All Rights Reserved.
+</span></footer>
+<script>
+				{
+					__sveltekit_1h8ul5n = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-        <div class="support-button">
-            <a href="https://discord.gg/DuZShDBq" target="_blank">Support</a>
-        </div>
-    </div>
+					const element = document.currentScript.parentElement;
+
+					const data = [{"type":"data","data":{session:null},"uses":{"route":1}},null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.584aeb6e.js"),
+						import("./_app/immutable/entry/app.c3e5a7a4.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"7fa64320996d95b2","version":"2023.8.0","r":1,"token":"e576b69bd0464fdf9765d12b83a24b5a","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
