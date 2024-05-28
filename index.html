@@ -1,72 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>BloxyVerse</title>
-<style>
-body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
+  <title>BloxyVerse</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
 
-.icon {
-  width: 350px;
-  height: 200px;
-  margin-bottom: 20px;
-}
+    .icon {
+      width: 350px;
+      height: 200px;
+      margin-bottom: 20px;
+    }
 
-.text {
-  font-size: 36px;
-  font-weight: bold;
-}
+    .text {
+      font-size: 36px;
+      font-weight: bold;
+    }
 
-.text span {
-  color: #00ff00;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #ffffff;
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #333333;
-  border-radius: 5px;
-}
-
-.menu a:hover {
-  background-color: #555555;
-}
-</style>
+    .text span {
+      color: #00ff00;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-  <img src="https://cdn.discordapp.com/attachments/1229606749447651431/1245006126131445840/image-1.png?ex=66572dcf&is=6655dc4f&hm=560083517a3b193fca1541230c96e38cdf6a86b70e74abbb462010043a0a3fdf" alt="Icon" class="icon">
-  <div class="text">
-    <span>BloxyVerset</span>
+  <div class="container">
+    <img src="https://cdn.discordapp.com/attachments/1229606749447651431/1245006126131445840/image-1.png?ex=66572dcf&is=6655dc4f&hm=560083517a3b193fca1541230c96e38cdf6a86b70e74abbb462010043a0a3fdf" alt="Icon" class="icon">
+    <div class="text">
+      <span>Loading...</span>
+    </div>
   </div>
-  <div class="menu">
-    <a href="#">Leaderboard</a>
-    <a href="#">Affiliates</a>
-    <a href="#">Race</a>
-    <a href="#">Fairness</a>
-    <a href="#">Discord</a>
-  </div>
-</div>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = "index.html";
+    }, 2000); // Redirect to main.html after 2 seconds
+  </script>
 </body>
+</html>
